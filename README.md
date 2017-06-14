@@ -2,7 +2,7 @@
 
 > This application uses Ruby on Rails 5 to let users create porfolios
 
-###Features
+### Features
 
 - Real-time chat engine for comments
 - Blog
