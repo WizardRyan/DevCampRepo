@@ -4,6 +4,6 @@
 <p><%= num.title %></p>
 <p><%= num.subtitle %></p>
 <p><%= num.body %></p>
-<%= image_tag num.thumbImage %>
+<%= image_tag num.thumbImage if !num.thumbImage.nil? %>
 
 <% end %>
