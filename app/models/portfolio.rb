@@ -1,4 +1,5 @@
 class Portfolio < ApplicationRecord
+  include Placeholder
   validates_presence_of :title, :body, :mainImage, :thumbImage
   def self.angular
     where(subtitle: "Angular")
@@ -8,8 +9,8 @@ class Portfolio < ApplicationRecord
   
   def set_defaults
     
-    self.mainImage ||= "http://via.placeholder.com/600x400"
-    self.thumbImage ||= "http://via.placeholder.com/350x200"
+    self.mainImage ||= Placeholder.image_gen(600,400)
+    self.thumbImage ||= Placeholder.image_gen(350,200)
     
   end
 end
