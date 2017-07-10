@@ -56,6 +56,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.1.0'
 gem 'devise', '~> 4.3'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'jquery-rails'
-
+gem 'andersen_copyright_tool', git: 'https://github.com/WizardRyan/andersen_copyright_tool'
+gem 'devcamp_view_tool', '~> 0.1.0'
 
