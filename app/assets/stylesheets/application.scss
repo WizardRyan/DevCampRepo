@@ -168,13 +168,22 @@ body {
 
 .card-block {
   color:black;
+  text-shadow: none;
   text-align: left;
   padding: 20px;
 }
 
-.card-block>.auth-links{
+#back {
   text-align: center;
 }
 .auth-links a {
   color: #444444;
+}
+
+#cancel-account{
+  margin-top: 13em;
+}
+
+#login-link{
+  text-align: right;
 }
