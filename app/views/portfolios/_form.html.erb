@@ -14,12 +14,15 @@
        </div>
        
        <div class="form-group">
-         <%= f.file_field :mainImage %>
+         <label class="btn btn-primary btn-block">
+           Upload main image <%= f.file_field :mainImage, style: 'display:none;' %>
+         </label>
        </div>
        
        <div class="form-group">
-         <%= f.file_field :thumbImage %>
-
+         <label class="btn btn-primary btn-block">
+           Upload thumb image <%= f.file_field :thumbImage, style: 'display:none;' %>
+         </label>
        </div>
        
     </div>
