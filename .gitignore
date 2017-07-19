@@ -18,3 +18,4 @@
 
 #secret
 /config/secrets.yml
+.env
