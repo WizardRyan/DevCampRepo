@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       
-    <%= @page_title %></title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
@@ -33,14 +32,17 @@
             
             
             
-                    <%= render "shared/application_nav" %>
- 
+              <%= render "shared/application_nav" %>
 
-                    <%= yield %>
-    
-                    <%= render "shared/application_footer" %>
-                    
-                    <%= source_helper %>
+
+              <%= yield %>
+
+              <%= render "shared/application_footer" %>
+              
+              <%= render "shared/alerts" %>
+
+              
+              <%= source_helper %>
          </div>
 
       </div>
