@@ -11,6 +11,12 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 require "dotenv-rails"
+require "action_cable/engine"
+require "redis"
+
+#redis = Redis.new(:host => "10.0.1.1", :port => 8080, :db => 15)
+
+
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -22,3 +28,4 @@ module DevCampPortfolio
     config.eager_load_paths << "#{Rails.root}/lib"
   end
 end
+
