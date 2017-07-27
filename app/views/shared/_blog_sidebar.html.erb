@@ -4,6 +4,8 @@
     <p>I probably won't post much here, this is really just showing what this site can do. Look below to see where else you find me, or visit the <%= link_to 'contact me', contact_path %> page.</p>
   </div>
   
+   <%= source_helper("alert alert-info blog-sidebar-source") %>
+  
   <div class="sidebar-module">
     <h4>Topics</h4>
     <% @side_bar_topics.each do |topic| %>
