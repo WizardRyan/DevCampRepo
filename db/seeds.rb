@@ -1,3 +1,33 @@
+User.create!(
+  email: "test3@test.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "AdminBoy",
+  roles: "site_admin"
+  )
+  
+puts "Admin created"
+
+User.create!(
+  email: "user@user.com",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Regular User",
+  )
+
+  sk = ["C#", "Rails", "HTML", "CSS", "JavaScript"]
+  per = [40, 30, 10, 10, 10]
+  
+5.times do |num|
+    Skill.create!(
+      title: sk[num],
+      percentUtilized: per[num]
+      )
+end
+  
+puts "5 skills created"
+
+
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -27,17 +57,8 @@ puts "3 topics created"
 end
     
     puts "ten blog posts created"
-    
-5.times do |skill|
-      Skill.create!(
-        title: "Rails #{skill}",
-        percentUtilized: 15
-        )
-    end
-    
-      
-      puts "5 skills created"
-      
+
+  
       8.times do |asdf|
         Portfolio.create!(
           title: "Portfolio title #{asdf + 1}",

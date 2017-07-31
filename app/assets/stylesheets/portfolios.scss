@@ -4,7 +4,10 @@
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+  font-family: "Roboto", Times, serif;
+  font-weight: 100;
 }
+
 
 .navbar {
   margin-bottom: 0;
@@ -22,7 +25,7 @@ body {
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 100;
 }
 
 .jumbotron .container {
@@ -36,9 +39,19 @@ body {
   background-color: #f7f7f7;
 }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
@@ -62,6 +75,10 @@ footer p {
 }
 
 /*********Custom*********/
+
+p {
+  font-weight: 100;
+}
 
 /* change the background color */
 .navbar-custom {
@@ -105,4 +122,6 @@ footer p {
   padding-top: 30px;
 }
 
-
+.lead{
+  font-weight: 40;
+}
