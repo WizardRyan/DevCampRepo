@@ -6,13 +6,16 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "placehold.jpg", alt: "Profile Picture", class: 'profile-img' %>
+        <h2>Skills</h2> 
+        <hr>
         <div class="skills">
           <% @skills.each do |skill| %>
           <div class="skill">
             <h4><%= skill.title %></h4>
             <div class="progress">
               <div 
-                class="progress-bar bg-info progress-bar-striped"
+                class="progress-bar progress-bar-striped"
+                id="progress-bars"
                 role="progressbar"
                 aria-valuenow"<%= skill.percentUtilized %>"
                 aria-valuemax="100"

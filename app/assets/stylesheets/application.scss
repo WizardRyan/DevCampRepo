@@ -28,8 +28,14 @@ a:hover {
  * Base structure
  */
 
+*{
+  
+}
+
+
 html,
 body {
+  font-family: 'Roboto', sans-serif;
   height: 100%;
   //background-color: #333;
 }
@@ -37,6 +43,15 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -266,3 +281,24 @@ body {
   margin-bottom: 10px;
 }
 
+#progress-bars{
+  background-color: #8066B3;
+}
+
+.profile-img{
+  margin-bottom: 20px;
+}
+
+.card p {
+  text-shadow: none;
+}
+
+.welcome{
+  color: black;
+  padding: 30px;
+}
+
+.welcome-btn{
+  color: white;
+  background-color: black;
+}
