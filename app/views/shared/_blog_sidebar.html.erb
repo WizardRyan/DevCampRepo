@@ -8,9 +8,14 @@
   
   <div class="sidebar-module">
     <h4>Topics</h4>
+   
+   
     <% @side_bar_topics.each do |topic| %>
       <p><%= link_to topic.title, topic_path(topic) %></p>
       <% end %>
+      <p><%= side_top("Computer Science/Programming", 1)%></p>
+      <p><%= side_top("Thoughts", 2)%></p>
+
   </div>
   
   <div class="sidebar-module">

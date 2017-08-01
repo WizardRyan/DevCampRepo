@@ -27,12 +27,15 @@ end
   
 puts "5 skills created"
 
-
-3.times do |topic|
+def top title 
   Topic.create!(
-    title: "Topic #{topic}"
+    title: title
     )
-end
+end 
+
+top "Computer Science/Programming"
+top "Thoughts"
+top "General"
 
 puts "3 topics created"
 
@@ -56,7 +59,7 @@ puts "3 topics created"
       )
 end
     
-    puts "ten blog posts created"
+    puts "10 blog posts created"
 
   
       8.times do |asdf|

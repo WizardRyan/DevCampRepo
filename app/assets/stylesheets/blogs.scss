@@ -201,9 +201,12 @@ h6, .h6 {
    margin-top: 20px;
    font-size: 1.8em;
    box-shadow: 6px 6px 5px gray;
-   font-style: calibri;
+   font-style: "Lato";
  }
  
+ .topic-card > .card a {
+   margin: 15px;
+ }
  .blogcrumb a{
    font-size: 1.25em;
    margin: 0px 10px 0px 10px;
